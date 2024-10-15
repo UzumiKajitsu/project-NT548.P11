@@ -117,6 +117,7 @@ services:
     environment: 
       # DONT USE IN PRODUCTION: Using cuz of Invalid Host Header
       DANGEROUSLY_DISABLE_HOST_CHECK: "true"
+      NODE_OPTIONS: "--openssl-legacy-provider"
     stdin_open: true
 
 networks:
